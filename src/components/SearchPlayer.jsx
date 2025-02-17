@@ -1,14 +1,13 @@
 import InputText from "../UI/text/InputText";
 import Label from "../UI/text/Label";
+import Position from "./Position";
 
 const Searchplayer = ({ position }) => {
   return (
     <>
       <section className="flex my-6 relative justify-center items-center bg-black rounded-xl">
-        <div className="rounded-full absolute -left-2 -top-3 bg-white h-8 w-8 flex items-center justify-center">
-          <h1 className="font-bold">{position}</h1>
-        </div>
-        <div className=" bg-blue-900 p-2.5 px-5 text-sm rounded-bl-2xl text-left mx-2">
+        <Position rank={position} />
+        <div className=" bg-blue-900 p-2.5 px-2 text-sm rounded-bl-2xl text-left mx-2">
           <Label text="Region" />
           <select name="region" id="region" className="rounded-lg w-full">
             <option value="">LAN</option>

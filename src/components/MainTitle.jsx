@@ -5,7 +5,7 @@ import Title from "../UI/text/Title";
 const MainTitle = () => {
   return (
     <>
-      <div className="text-center absolute top-16">
+      <div className="text-center py-4">
         <Quote text={"Phase One"} />
         <Title text={"TeamMaker"} />
         <Subtitle text={"LoL Ranking System"} />
