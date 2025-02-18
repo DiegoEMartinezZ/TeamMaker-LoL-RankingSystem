@@ -1,12 +1,10 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import MainTitle from "../components/MainTitle";
 import PlayerRanking from "../components/PlayerRanking";
 import Ranking from "../components/Ranking";
 import Stats from "../components/Stats";
 import Winrate from "../components/Winrate";
 import Navbar from "../UI/navbar/Navbar";
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
-import Position from "../components/Position";
+import OnePlayerRanking from "../components/OnePlayerRanking";
 
 const TeamRanking = () => {
   return (
@@ -14,12 +12,12 @@ const TeamRanking = () => {
       <div className="flex-col absolute bottom-0 right-0 left-0 top-0 items-center justify-center h-auto bg-black">
         <MainTitle />
         <Navbar />
-        <section className="flex-col items-center mx-2 justify-around">
+        <section className="flex-col items-center mx-1 justify-around">
           <div className="flex justify-center  ">
             <Ranking teamName={"BLD2 Gaming"} tier={"S"} />
             <section>
               <Winrate porcentage={"62.7%"} />
-              <ul className="grid grid-cols-2 gap-2">
+              <ul className="grid grid-cols-2 gap-5">
                 <Stats data={"Total Kills"} info={"3310"} />
                 <Stats data={"Total Deaths"} info={"250"} />
                 <Stats data={"Maps Won"} info={"670"} />
@@ -31,36 +29,45 @@ const TeamRanking = () => {
           </div>
           <PlayerRanking teamName={"BLD2 Gaming"} />
           <ul className="mx-5">
-            <li className="my-3 flex flex-nowrap items-center justify-between">
-              <section className="bg-white text-blue-900 border-4 border-blue-900 rounded-lg">
-                <div>
-                  <Position rank={1} />
-                  <ul className="text-left flex justify-center items-center">
-                    <li className="py-2">
-                      <h1 className="text-sm font-bold mx-2">Demon </h1>
-                      <h1>LowOnCYAN </h1>
-                    </li>
+            <OnePlayerRanking
+              position={1}
+              alias={"DemonKing"}
+              playerName={"LowOnCYAN"}
+              winrateP={"67.4%"}
+              role={"AD Carry"}
+            />
 
-                    <li className="py-2">
-                      <h1 className="text-sm font-bold mx-2">Winrate</h1>
-                      <h1> 67.5% </h1>
-                    </li>
+            <OnePlayerRanking
+              position={2}
+              alias={"Little Demon"}
+              playerName={"Bizmarcko"}
+              winrateP={"57.3%"}
+              role={"AP Carry"}
+            />
 
-                    <li className=" py-2">
-                      <h1 className="text-sm font-bold mx-2">Role</h1>
-                      <h1> AD Carry </h1>
-                    </li>
+            <OnePlayerRanking
+              position={3}
+              alias={"Killer supps"}
+              playerName={"Leinad86"}
+              winrateP={"54.2%"}
+              role={"Support"}
+            />
 
-                    <li className="py-1">
-                      <FontAwesomeIcon
-                        icon={faMagnifyingGlass}
-                        className="text-red-900 text-sm font-bold mx-2"
-                      />
-                    </li>
-                  </ul>
-                </div>
-              </section>
-            </li>
+            <OnePlayerRanking
+              position={4}
+              alias={"OTP Amumu"}
+              playerName={"Eduardking"}
+              winrateP={"48.1%"}
+              role={"Jungler"}
+            />
+
+            <OnePlayerRanking
+              position={5}
+              alias={"Perrita Solitaria"}
+              playerName={"Caster16"}
+              winrateP={"37.4%"}
+              role={"Top"}
+            />
           </ul>
         </section>
       </div>
