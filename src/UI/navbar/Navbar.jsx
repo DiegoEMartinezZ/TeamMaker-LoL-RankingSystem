@@ -1,4 +1,4 @@
-import BtnNavbar from "./BtnNavbar";
+import BtnNavbar from "../buttons/BtnNavbar";
 
 const Navbar = () => {
   return (

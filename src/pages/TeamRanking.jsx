@@ -5,16 +5,23 @@ import Stats from "../components/Stats";
 import Winrate from "../components/Winrate";
 import Navbar from "../UI/navbar/Navbar";
 import OnePlayerRanking from "../components/OnePlayerRanking";
+import IconGoBack from "../UI/icons/IconGoBack";
 
 const TeamRanking = () => {
   return (
     <>
-      <div className="flex-col absolute bottom-0 right-0 left-0 top-0 items-center justify-center h-auto bg-black">
+      <div className="flex-col absolute bottom-0 right-0 left-0 top-0 items-center justify-center h-fit bg-black">
+        <IconGoBack page={"/"} />
         <MainTitle />
         <Navbar />
         <section className="flex-col items-center mx-1 justify-around">
           <div className="flex justify-center  ">
-            <Ranking teamName={"BLD2 Gaming"} tier={"S"} />
+            <Ranking
+              text={"BLD2 Gaming"}
+              title={"General Ranking"}
+              tier={"S"}
+            />
+
             <section>
               <Winrate porcentage={"62.7%"} />
               <ul className="grid grid-cols-2 gap-5">
@@ -34,7 +41,7 @@ const TeamRanking = () => {
               alias={"DemonKing"}
               playerName={"LowOnCYAN"}
               winrateP={"67.4%"}
-              role={"AD Carry"}
+              grade={"S"}
             />
 
             <OnePlayerRanking
@@ -42,7 +49,7 @@ const TeamRanking = () => {
               alias={"Little Demon"}
               playerName={"Bizmarcko"}
               winrateP={"57.3%"}
-              role={"AP Carry"}
+              grade={"S-"}
             />
 
             <OnePlayerRanking
@@ -50,7 +57,7 @@ const TeamRanking = () => {
               alias={"Killer supps"}
               playerName={"Leinad86"}
               winrateP={"54.2%"}
-              role={"Support"}
+              grade={"A+"}
             />
 
             <OnePlayerRanking
@@ -58,7 +65,7 @@ const TeamRanking = () => {
               alias={"OTP Amumu"}
               playerName={"Eduardking"}
               winrateP={"48.1%"}
-              role={"Jungler"}
+              grade={"B+"}
             />
 
             <OnePlayerRanking
@@ -66,7 +73,7 @@ const TeamRanking = () => {
               alias={"Perrita Solitaria"}
               playerName={"Caster16"}
               winrateP={"37.4%"}
-              role={"Top"}
+              grade={"E"}
             />
           </ul>
         </section>
