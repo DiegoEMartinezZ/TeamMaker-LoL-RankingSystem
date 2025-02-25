@@ -9,7 +9,7 @@ import Navbar from "../UI/navbar/Navbar";
 const PlayerStats = () => {
   return (
     <>
-      <div className="flex-col absolute bottom-0 right-0 left-0 top-0 items-center justify-center h-full bg-black">
+      <div className="flex-col pt-8 absolute bottom-0 right-0 left-0 top-0 items-center justify-center h-full bg-black">
         <IconGoBack page={"/teamRank"} />
         <MainTitle />
         <Navbar />

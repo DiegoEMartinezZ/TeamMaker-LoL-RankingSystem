@@ -5,9 +5,9 @@ import Position from "./Position";
 const Searchplayer = ({ position }) => {
   return (
     <>
-      <section className="flex my-6 relative justify-center items-center bg-black rounded-xl">
-        <Position rank={position} />
-        <div className=" bg-blue-900 p-2.5 px-2 text-sm rounded-bl-2xl text-left mx-2">
+      <section className="flex my-6 relative justify-center items-center  bg-black rounded-xl">
+        <div className=" bg-blue-900 relative p-2.5 px-2 text-sm rounded-bl-2xl text-left mx-2">
+          <Position rank={position} />
           <Label text="Region" />
           <select name="region" id="region" className="rounded-lg w-full">
             <option value="">LAN</option>

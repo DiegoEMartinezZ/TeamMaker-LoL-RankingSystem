@@ -8,7 +8,7 @@ import SocialMedia from "../UI/socialMedia/SocialMedia";
 const Footer = ({ year }) => {
   return (
     <>
-      <footer className="text-white absolute bottom-0 w-full text-center flex justify-center items-center my-5">
+      <footer className="text-white absolute bottom-0 w-full text-center flex justify-center items-center my-3">
         <ul>
           <div className="flex justify-center items-center my-1">
             <SocialMedia

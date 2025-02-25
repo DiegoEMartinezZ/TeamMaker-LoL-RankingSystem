@@ -9,9 +9,9 @@ import BtnRankTeam from "../UI/buttons/BtnRankTeam";
 const Home = () => {
   return (
     <>
-      <section className="flex-col absolute right-0 left-0 bottom-0 top-0 items-center justify-center h-screen bg-black">
+      <section className="relative pt-8 flex-col items-center justify-center h-screen bg-black ">
         <MainTitle />
-        <div className="flex-col relative mx-5">
+        <div className="flex-col relative mx-5 mt-5">
           <TitleSection text="Search yout teammates (0/5)" />
           <Searchplayer position={1} />
           <Searchplayer position={2} />
@@ -21,7 +21,7 @@ const Home = () => {
           <div className="flex justify-center items-center">
             <BtnRestartSelection />
           </div>
-          <section className=" my-5 flex justify-center items-center">
+          <section className="mt-5 flex justify-center items-center">
             <InputTeamName />
             <BtnRankTeam
               icon={faChartSimple}

@@ -10,7 +10,7 @@ import IconGoBack from "../UI/icons/IconGoBack";
 const TeamRanking = () => {
   return (
     <>
-      <div className="flex-col absolute bottom-0 right-0 left-0 top-0 items-center justify-center h-fit bg-black">
+      <div className="flex-col pt-8 absolute bottom-0 right-0 left-0 top-0 items-center justify-center h-fit bg-black">
         <IconGoBack page={"/"} />
         <MainTitle />
         <Navbar />
@@ -34,8 +34,9 @@ const TeamRanking = () => {
               </ul>
             </section>
           </div>
+
           <PlayerRanking teamName={"BLD2 Gaming"} />
-          <ul className="mx-5">
+          <ul className="mx-5 flex-col justify-center">
             <OnePlayerRanking
               position={1}
               alias={"DemonKing"}

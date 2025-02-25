@@ -8,18 +8,18 @@ import OnePlayerGrade from "./OnePlayerGrade";
 const OnePlayerRanking = ({ position, alias, playerName, winrateP, grade }) => {
   return (
     <>
-      <li className="my-5 relative flex flex-nowrap items-center justify-between">
-        <section className="bg-white text-blue-900 border-4 border-blue-900 w-full mr-2 rounded-lg">
+      <li className="my-5 relative flex items-center justify-center">
+        <section className="sm:mx-52 bg-white text-blue-900 border-4 w-full border-blue-900  mr-2 rounded-lg">
           <div>
-            <Position rank={position} />
-            <ul className="py-2 text-left flex justify-between items-center">
+            <ul className="py-2 text-left flex relative justify-around items-center">
+              <Position rank={position} />
               <OnePlayerName alias={alias} player={playerName} />
               <OnePlayerWinrate winrate={winrateP} />
               <OnePlayerGrade grade={grade} />
+              <IconToPage icon={faMagnifyingGlass} page={"/playerStats"} />
             </ul>
           </div>
         </section>
-        <IconToPage icon={faMagnifyingGlass} page={"/playerStats"} />
       </li>
     </>
   );

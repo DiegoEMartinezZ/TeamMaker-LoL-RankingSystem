@@ -12,7 +12,7 @@ const BtnRankTeam = ({ text, icon, page }) => {
     <>
       <button
         onClick={handleGoToPage}
-        className="bg-blue-950 text-white rounded-lg p-2 mx-2 w-1/2 cursor-pointer"
+        className="bg-blue-950 text-white rounded-lg py-2 w-32 cursor-pointer mx-2"
       >
         <div className="flex items-center">
           <FontAwesomeIcon icon={icon} className="mx-2" />
