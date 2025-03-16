@@ -1,10 +1,4 @@
-import {
-  faBehance,
-  faGithub,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
 import { faPlusCircle } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Title from "../UI/text/Title";
 import Subtitle from "../UI/text/Subtitle";
 import Quote from "../UI/text/Quote";
